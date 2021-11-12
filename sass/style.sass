@@ -211,3 +211,74 @@ body
   border-bottom: 5px solid #205f51
   border-right: 5px solid #205f51
   box-shadow: 2px 2px 18px 2px #17a589b6
+  transition: 500ms ease-in-out
+  &:hover
+    background: #858585
+    color: #fff
+
+#teste9
+  position: relative
+  padding: 0.5rem 1rem
+  background: rgba(255, 255, 255, 0.185)
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4)
+  border-top: 1px solid rgba(255, 255, 255, 0.4)
+  border-radius: 30px
+  overflow: hidden
+  transition: .5s
+  &::before
+    content: ''
+    position: absolute
+    width: 50%
+    height: 100%
+    top: 0
+    left: 0
+    transform: skewX(45deg) translateX(0)
+    background: linear-gradient(to left, rgba(255,255,255,0.15), transparent)
+    transition: .5s
+  &::after
+    content: ''
+    position: absolute
+    top: 0
+    left: 45%
+    width: 10%
+    height: 110%
+    transform: skewX(45deg) translateX(0)
+    background: rgba(255, 17, 0, .6)
+    box-shadow: 0 0 30px red
+    z-index: -1
+    transition: .9s
+  &:hover
+    letter-spacing: 3px
+    &::before
+      transform: skewX(45deg) translateX(200%)
+    &::after
+      width: 200%
+      transform: skewX(45deg) translateX(200%)
+
+#teste10
+  position: relative
+  background: #fff
+  padding: 0.5rem 1rem
+  color: #000
+  border-top: #585858
+  border-bottom: #585858
+  border-radius: 30px
+  font-weight: bold
+  z-index: -1
+  overflow: hidden
+  -webkit-box-reflect: below 1% linear-gradient(transparent, #ffffff21)
+  &::before
+    position: absolute
+    content: ''
+    width: 50%
+    height: 100%
+    top: 0
+    left: 0
+    background: #74747450
+    transform: skewX(45deg) translateX(-15%)
+    transition: .5s
+    z-index: 1
+  &:hover
+    letter-spacing: 3px
+    &::before
+      transform: skewX(45deg) translateX(200%)
